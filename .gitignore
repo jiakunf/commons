@@ -3,4 +3,3 @@
 .idea
 *__pycache__*
 *.egg-info*
-./schemas/+opt/plots.m
