@@ -177,7 +177,7 @@ classdef plots
                 
                 h=imshow(img);
                 set(h,'buttondownfcn',@opt.plots.moveMarker);
-                %keyTitle(key);
+                keyTitle(key);
                 axis image
                 set(gca,'xdir','reverse')
                 
@@ -191,7 +191,7 @@ classdef plots
             hold off
             h=imagesc(structImg); colormap('gray');
             set(h,'buttondownfcn',@opt.plots.moveMarker);
-            %keyTitle(structKey);
+            keyTitle(structKey);
             axis image
             set(gca,'xdir','reverse','xtick',[],'ytick',[])
             p=get(gca,'position');
@@ -351,7 +351,7 @@ classdef plots
                               
                 h=imshow(img);
                 set(h,'buttondownfcn',@opt.plots.moveMarker);
-                %keyTitle(key);
+                keyTitle(key);
                 axis image
                 set(gca,'xdir','reverse')
                 
@@ -365,7 +365,7 @@ classdef plots
             hold off
             h=imagesc(structImg); colormap('gray');
             set(h,'buttondownfcn',@opt.plots.moveMarker);
-            %keyTitle(structKey);
+            keyTitle(structKey);
             axis image
             set(gca,'xdir','reverse','xtick',[],'ytick',[])
             p=get(gca,'position');
@@ -391,7 +391,7 @@ classdef plots
             image(img3);
             set(gca,'xdir','reverse','xtick',[],'ytick',[])
             axis image
-            %keyTitle(structKey);
+            keyTitle(structKey);
             information.img = img2;
             information.key = structKey;
             uicontrol('style','slider','min',0,'max',0.1,'value',0,'units','normalized','position',p,'tag','min','callback',@opt.plots.SliderMerge,'userdata',information);
@@ -433,7 +433,7 @@ classdef plots
             image(img);
             set(gca,'xdir','reverse','xtick',[],'ytick',[])
             axis image
-            %keyTitle(information.key);
+            keyTitle(information.key);
 
         end
         
