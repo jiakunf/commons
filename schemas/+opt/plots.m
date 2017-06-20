@@ -433,7 +433,7 @@ classdef plots
             image(img);
             set(gca,'xdir','reverse','xtick',[],'ytick',[])
             axis image
-            keyTitle(information.key);
+%             keyTitle(information.key);
 
         end
         
@@ -640,7 +640,7 @@ classdef plots
             hold off
             h=imagesc(structImg); colormap('gray');
             set(h,'buttondownfcn',@opt.plots.moveMarker);
-            keyTitle(structKey);
+%             keyTitle(structKey);
             axis image
             set(gca,'xdir','reverse','xtick',[],'ytick',[])
             p=get(gca,'position');
